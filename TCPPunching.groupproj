@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{D5585F9A-B0DC-4B6F-B61D-7023B869C6B5}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Server\TCPBrokerServer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Client\TCPPunchingClient.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="TCPBrokerServer">
+        <MSBuild Projects="Server\TCPBrokerServer.dproj"/>
+    </Target>
+    <Target Name="TCPBrokerServer:Clean">
+        <MSBuild Projects="Server\TCPBrokerServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TCPBrokerServer:Make">
+        <MSBuild Projects="Server\TCPBrokerServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TCPPunchingClient">
+        <MSBuild Projects="Client\TCPPunchingClient.dproj"/>
+    </Target>
+    <Target Name="TCPPunchingClient:Clean">
+        <MSBuild Projects="Client\TCPPunchingClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TCPPunchingClient:Make">
+        <MSBuild Projects="Client\TCPPunchingClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="TCPBrokerServer;TCPPunchingClient"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="TCPBrokerServer:Clean;TCPPunchingClient:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="TCPBrokerServer:Make;TCPPunchingClient:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

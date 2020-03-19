@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/03/15 20:47:04.000.706,D:\test\TCP打洞\TCPPunching.groupproj=D:\test\ProjectGroup1.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="D:\test\TCP打洞\Client\TCPPunchingClient.dproj"/>
+	</Default.Personality>
+</BorlandProject>
