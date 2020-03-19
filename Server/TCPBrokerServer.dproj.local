@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/03/15 19:44:53.000.414,=D:\test\Unit1.pas</Transaction>
+    <Transaction>2020/03/15 19:45:02.000.231,D:\test\TCP打洞\Server\Unit1.pas=D:\test\Unit1.pas</Transaction>
+    <Transaction>2020/03/15 19:45:02.000.231,D:\test\TCP打洞\Server\Unit1.dfm=D:\test\Unit1.dfm</Transaction>
+    <Transaction>2020/03/15 19:45:34.000.426,D:\test\TCP打洞\Server\TCPBrokerServer.dproj=D:\test\Project1.dproj</Transaction>
+    <Transaction>2020/03/15 19:56:35.000.785,=D:\test\TCP打洞\Server\Unit2.pas</Transaction>
+    <Transaction>2020/03/15 19:57:09.000.913,D:\test\TCP打洞\Common\CommandObj.pas=D:\test\TCP打洞\Server\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>
